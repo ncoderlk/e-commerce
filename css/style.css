@@ -835,6 +835,10 @@ body {
   margin: 30px;
 }
 
+.card {
+  background-color: #ffffffdc;
+}
+
 h1 button {
 
   margin-left: 60px;
