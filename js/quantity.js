@@ -1,6 +1,7 @@
 const incr_btn = document.querySelectorAll('button[id="incr"]')
 incr_btn.forEach(btn => {
   btn.addEventListener('click', () => {
+    document.getElementById('cart_msg').innerText = "Added to the Cart"
     let val = btn.name
     val = parseInt(val)
     switch (val) {
@@ -31,7 +32,7 @@ incr_btn.forEach(btn => {
 })
 const decr_btn = document.querySelectorAll('button[id="decr"]')
 decr_btn.forEach(btn => {
-
+  document.getElementById('cart_msg').innerText = "Added to the Cart"
   btn.addEventListener('click', () => {
     let val = btn.name
     val = parseInt(val)
@@ -84,6 +85,7 @@ function decr(id) {
 const cart_btn = document.querySelectorAll('img[alt="cart"]')
 cart_btn.forEach(btn => {
   btn.addEventListener('click', () => {
+    document.getElementById('cart_msg').innerText = "Added to the Cart"
     let val = btn.id
     val = parseInt(val)
     switch (val) {
@@ -109,6 +111,7 @@ cart_btn.forEach(btn => {
   })
 })
 function clr(id) {
+  document.getElementById('cart_msg').innerText = "Added to the Cart"
   document.getElementById('cart_msg').classList.toggle('hide')
   document.getElementById(id).textContent = 0;
   setTimeout(() => {

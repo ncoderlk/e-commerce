@@ -21,5 +21,13 @@ btn.forEach($ => {
     <hr>
     25
     `;
+    document.getElementById('cart_msg').innerText = "Thank you for rating"
+    document.getElementById('cart_msg').classList.toggle('hide')
+    setTimeout(() => {
+      if (document.getElementById('cart_msg').classList.contains('hide')) { }
+      else {
+        document.getElementById('cart_msg').classList.toggle('hide')
+      }
+    }, 3000)
   })
 })
