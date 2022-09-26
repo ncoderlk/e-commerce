@@ -930,4 +930,30 @@ button:hover {
 
 #about img {
   animation: anime2 0.8s ease-in-out alternate;
+  transform: translateX(-220px);
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
+table,
+th,
+td {
+  padding: 4px;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+ul,
+li {
+  text-align: center;
+}
+
+ul {
+  width: 100px;
+  display: inline;
+  margin: 50px;
+
+}
+
+table head {}
