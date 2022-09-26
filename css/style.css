@@ -350,6 +350,7 @@ aside {
 
 
 
+
   #shop .card .overlay span button#incr {
     margin-left: 30px;
   }
@@ -603,6 +604,7 @@ aside {
 
   #about img {
     width: 40%;
+    transform: translateX(-350px);
   }
 
   .desktop_menu {
@@ -752,7 +754,7 @@ aside {
 }
 
 #contact {
-  background-image: url('../images/contact-img.jpg');
+  /* background-image: url('../images/contact-img.jpg'); */
   background-size: cover;
   background-attachment: scroll;
   padding-bottom: 20px;
@@ -761,6 +763,75 @@ aside {
 #footer {
   width: 100%;
   min-height: 50vh;
-  background-image: url('../images/footer-bg.jpg');
+  /* background-image: url('../images/footer-bg.jpg'); */
+  /* background-color: #fff; */
   background-size: cover;
+  color: #777;
+}
+
+.ratebox {
+  cursor: pointer;
+}
+
+.social {
+  width: 60px;
+  height: auto;
+  padding: 8px;
+  cursor: pointer;
+}
+
+body {
+  background-image: url('../images/home-bg.jpg');
+  background-attachment: fixed;
+}
+
+.connect-social {
+  float: right;
+  font-size: 20px;
+  text-align: center;
+  color: #777;
+  transform: translateX(-100px);
+}
+
+#footer h1 {
+  background-image: linear-gradient(yellowgreen, green);
+  -webkit-backface-visibility: visible;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#footer #copyright {
+  text-align: center;
+  transform: translateY(150px);
+}
+
+.card {
+  background-color: #fff;
+}
+
+#footer h3 {
+  transform: translateY(100px);
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+h1 button {
+
+  margin-left: 60px;
+  width: 130px;
+  height: 50px;
+  color: transparent;
+  border: 3px solid yellowgreen;
+  border-radius: 20px;
+
+}
+
+button:hover {
+  background-color: yellowgreen;
+  box-shadow: var(--sm-box-shadow);
+  color: #fff;
 }
