@@ -344,7 +344,7 @@ aside {
 
 
   #shop .card .overlay span button#incr {
-    margin-left: 40px;
+    margin-left: 30px;
   }
 
   #shop .card .overlay span button {
@@ -366,6 +366,36 @@ aside {
     text-align: center;
     padding: 2px;
     transform: translateY(-5px);
+  }
+
+  #contact .rate .ratebox {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    box-shadow: var(--sm-box-shadow);
+    background-color: #ccc;
+  }
+
+  #contact .rate .ratebox.star {
+    background-color: gold;
+    animation: rotate 0.5s ease-in-out alternate;
+  }
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(-45deg);
+    }
+
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+
+  #contact .rate {
+    display: flex;
+    flex-direction: row;
   }
 
 }
@@ -391,6 +421,35 @@ aside {
     display: none;
   }
 
+  #contact .rate .ratebox {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    box-shadow: var(--sm-box-shadow);
+    background-color: #ccc;
+  }
+
+  #contact .rate .ratebox.star {
+    background-color: gold;
+    animation: rotate 0.5s ease-in-out alternate;
+  }
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(-45deg);
+    }
+
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+
+  #contact .rate {
+    display: flex;
+    flex-direction: row;
+  }
 
   /*--------------------------------
  ------Shop Section Styles -------
@@ -468,7 +527,7 @@ aside {
 
 
   #shop .card .overlay span button#incr {
-    margin-left: 40px;
+    margin-left: 30px;
   }
 
   #shop .card .overlay span button {
