@@ -962,3 +962,11 @@ nav button:hover {
   border: none;
   box-shadow: none;
 }
+
+#shop h1 {
+  font-size: 35px;
+  background-image: linear-gradient(yellowgreen, green);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-backface-visibility: visible;
+}
