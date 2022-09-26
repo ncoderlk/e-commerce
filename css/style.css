@@ -31,10 +31,6 @@ section {
   min-height: 100vh;
 }
 
-footer {
-  min-height: 50vh;
-}
-
 a,
 button {
   color: #777;
@@ -229,8 +225,15 @@ aside {
 
 }
 
+/*--------------------------------
+ ------About Section Styles -------
+ -------------------------------*/
 
+#about {
+  min-height: 70vh;
+  padding: 30px;
 
+}
 
 
 
@@ -253,6 +256,16 @@ aside {
 
   .logo {
     width: 150px;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  #about img {
+    transform: translateX(-200px) translateY(50px);
+    width: 300px;
+    height: auto;
   }
 
   /*--------------------------------
@@ -358,6 +371,14 @@ aside {
 }
 
 @media (min-width:618px) {
+  #about .text-content {
+    float: right;
+  }
+
+  #about img {
+    width: 40%;
+  }
+
   .desktop_menu {
     display: block;
   }
@@ -369,6 +390,7 @@ aside {
   #hamburger-btn {
     display: none;
   }
+
 
   /*--------------------------------
  ------Shop Section Styles -------
