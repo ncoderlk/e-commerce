@@ -249,6 +249,28 @@ aside {
  ------------------------------------------- */
 
 @media (max-width:618px) {
+
+  table,
+  th,
+  td {
+    padding: 4px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #000;
+  }
+
+  ul,
+  li {
+    text-align: center;
+  }
+
+  ul {
+    width: 100px;
+    display: inline;
+    margin: 50px;
+
+  }
+
   .desktop_menu {
     display: none;
   }
@@ -670,6 +692,33 @@ aside {
   /*--------------------------------
  ------Shop Section Styles -------
  -------------------------------*/
+  ul,
+  .fet {
+    margin: auto;
+    text-align: center;
+    transform: translateX(-500px) translateY(100px);
+  }
+
+  table {
+    margin: auto;
+    text-align: center;
+    transform: translateX(-200px) translateY(70px);
+    border: 2px solid #000;
+  }
+
+
+  #about p {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  td,
+  th {
+    border: 2px solid #000;
+    padding: 5px;
+  }
 
   #shop .wrapper {
     display: flex;
@@ -935,26 +984,6 @@ button:hover {
   margin-bottom: 50px;
 }
 
-table,
-th,
-td {
-  padding: 4px;
-  margin: auto;
-  text-align: center;
-  border: 2px solid #000;
-}
-
-ul,
-li {
-  text-align: center;
-}
-
-ul {
-  width: 100px;
-  display: inline;
-  margin: 50px;
-
-}
 
 nav button:hover {
   background-color: unset;
@@ -971,4 +1000,11 @@ h1 {
   color: transparent;
   -webkit-background-clip: text;
   -webkit-backface-visibility: visible;
+}
+
+#about p {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
 }
