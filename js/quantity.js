@@ -112,7 +112,10 @@ function clr(id) {
   document.getElementById('cart_msg').classList.toggle('hide')
   document.getElementById(id).textContent = 0;
   setTimeout(() => {
-    document.getElementById('cart_msg').classList.toggle('hide')
+    if (document.getElementById('cart_msg').classList.contains('hide')) {
+      document.getElementById('cart_msg').classList.toggle('hide')
+    }
+
   }, 3500)
   if (document.getElementById('cart_msg').classList.contains('hide')) {
     console.log('hidden')
