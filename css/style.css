@@ -959,4 +959,6 @@ ul {
 nav button:hover {
   background-color: unset;
   outline: unset;
+  border: none;
+  box-shadow: none;
 }
