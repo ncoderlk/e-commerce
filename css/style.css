@@ -755,4 +755,12 @@ aside {
   background-image: url('../images/contact-img.jpg');
   background-size: cover;
   background-attachment: scroll;
+  padding-bottom: 20px;
+}
+
+#footer {
+  width: 100%;
+  min-height: 50vh;
+  background-image: url('../images/footer-bg.jpg');
+  background-size: cover;
 }
