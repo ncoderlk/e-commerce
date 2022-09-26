@@ -369,9 +369,9 @@ aside {
   }
 
   #contact .rate .ratebox {
-    min-width: 50px;
-    max-width: 50px;
-    min-height: 50px;
+    min-width: 66px;
+    max-width: 66px;
+    min-height: 66px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     box-shadow: var(--sm-box-shadow);
     background-color: #ccc;
@@ -422,9 +422,9 @@ aside {
   }
 
   #contact .rate .ratebox {
-    min-width: 50px;
-    max-width: 50px;
-    min-height: 50px;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     box-shadow: var(--sm-box-shadow);
     background-color: #ccc;
