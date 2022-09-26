@@ -963,7 +963,9 @@ nav button:hover {
   box-shadow: none;
 }
 
-#shop h1 {
+#shop h1,
+#about h1,
+h1 {
   font-size: 35px;
   background-image: linear-gradient(yellowgreen, green);
   color: transparent;
