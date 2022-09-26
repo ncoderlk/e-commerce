@@ -720,6 +720,16 @@ aside {
     cursor: pointer;
   }
 
+
+
+  .connect-social {
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    color: #777;
+    transform: translateX(-100px);
+  }
+
   #shop .card .overlay img:hover {
     opacity: 0.8;
   }
@@ -796,25 +806,12 @@ aside {
   cursor: pointer;
 }
 
-.social {
-  width: 60px;
-  height: auto;
-  padding: 8px;
-  cursor: pointer;
-}
 
 body {
   background-image: url('../images/home-bg.jpg');
   background-attachment: fixed;
 }
 
-.connect-social {
-  float: right;
-  font-size: 20px;
-  text-align: center;
-  color: #777;
-  transform: translateX(-100px);
-}
 
 #footer h1 {
   background-image: linear-gradient(yellowgreen, green);
@@ -827,6 +824,16 @@ body {
   margin-bottom: 50px;
 }
 
+.social {
+  width: 60px;
+  height: auto;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.connect-social {
+  margin: 30px;
+}
 
 h1 button {
 
