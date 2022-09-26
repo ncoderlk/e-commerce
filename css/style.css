@@ -501,6 +501,9 @@ aside {
     box-sizing: border-box;
   }
 
+  .connect-social {
+    transform: translateY(30px);
+  }
 }
 
 @media (min-width:618px) {
