@@ -897,3 +897,37 @@ button:hover {
   color: transparent;
   font-size: 35px;
 }
+
+
+#home .text-content h2 {
+  animation: anime2 0.8s ease-in-out alternate;
+}
+
+#home .text-content h1,
+#home .text-content button {
+  animation: anime 0.8s ease-in-out alternate;
+}
+
+@keyframes anime {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes anime2 {
+  0% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#about img {
+  animation: anime2 0.8s ease-in-out alternate;
+}
