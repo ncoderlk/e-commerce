@@ -113,6 +113,9 @@ function clr(id) {
   document.getElementById(id).textContent = 0;
   setTimeout(() => {
     if (document.getElementById('cart_msg').classList.contains('hide')) {
+      console.log('hidden')
+    }
+    else {
       document.getElementById('cart_msg').classList.toggle('hide')
     }
 
