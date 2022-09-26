@@ -225,7 +225,7 @@ aside {
 
 .home {
   /* Background image made for both screen sizes*/
-  background-image: url('../images/home-bg.jpg');
+  /* background-image: url('../images/home-bg.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -810,6 +810,7 @@ aside {
 body {
   background-image: url('../images/home-bg.jpg');
   background-attachment: fixed;
+  background-size: cover;
 }
 
 
@@ -844,14 +845,45 @@ h1 button {
   margin-left: 60px;
   width: 130px;
   height: 50px;
-  color: transparent;
+  /* color: transparent; */
   border: 3px solid yellowgreen;
   border-radius: 20px;
-
+  color: yellowgreen;
 }
 
 button:hover {
   background-color: yellowgreen;
   box-shadow: var(--sm-box-shadow);
   color: #fff;
+}
+
+#home .text-content {
+  transform: translateY(50vh) translateX(50px);
+  padding-left: 50px;
+}
+
+#home .text-content button {
+  margin-top: 10px;
+  width: 130px;
+  height: 50px;
+  /* color: transparent; */
+  color: #fff;
+  border-radius: 20px;
+  background-color: yellowgreen;
+}
+
+#home .text-content button:hover {
+  border: 3px solid yellowgreen;
+  border-radius: 20px;
+  background-color: transparent;
+  color: yellowgreen;
+  background: #fff;
+}
+
+#home .text-content h1 {
+  background-image: linear-gradient(red, orange);
+  -webkit-backface-visibility: visible;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 35px;
 }
