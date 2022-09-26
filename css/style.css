@@ -956,4 +956,7 @@ ul {
 
 }
 
-table head {}
+nav button:hover {
+  background-color: unset;
+  outline: unset;
+}
