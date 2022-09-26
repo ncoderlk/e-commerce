@@ -657,6 +657,6 @@ form input:user-invalid {
 }
 
 #contact {
-  padding: 50px;
+  padding-top: 50px;
   box-sizing: border-box;
 }
