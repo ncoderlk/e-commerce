@@ -253,6 +253,10 @@ aside {
     display: none;
   }
 
+  #home {
+    text-align: center;
+  }
+
   #footer {
     text-align: center;
   }
@@ -784,6 +788,11 @@ aside {
     cursor: pointer;
   }
 
+  #home .text-content {
+    transform: translateY(50vh) translateX(50px);
+    padding-left: 50px;
+  }
+
 }
 
 #contact {
@@ -857,10 +866,7 @@ button:hover {
   color: #fff;
 }
 
-#home .text-content {
-  transform: translateY(50vh) translateX(50px);
-  padding-left: 50px;
-}
+
 
 #home .text-content button {
   margin-top: 10px;
