@@ -257,6 +257,10 @@ aside {
     text-align: center;
   }
 
+  #home .text-content {
+    transform: translateY(50vh);
+  }
+
   #footer {
     text-align: center;
   }
