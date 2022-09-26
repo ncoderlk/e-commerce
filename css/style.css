@@ -1,0 +1,472 @@
+/* --------------
+---Google Fonts--
+--------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*--------------
+ Global Styles 
+ --------------*/
+:root {
+  --sm-box-shadow: 0 0 5px #ccc, 0 0 5px #ccc;
+  --md-box-shadow: 0 0 5px #777, 0 0 5px #777;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+body,
+main,
+section,
+footer {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 100vh;
+}
+
+footer {
+  min-height: 50vh;
+}
+
+a,
+button {
+  color: #777;
+  background: unset;
+  border: none;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*-------------
+  Navbar Styles 
+  --------------*/
+
+nav,
+aside {
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  z-index: 100000;
+  color: #777;
+  position: fixed;
+  padding: 20px;
+  left: 0;
+  top: 0;
+}
+
+aside {
+  background-color: #ffffffd7;
+  padding: 30px;
+  box-shadow: var(--sm-box-shadow);
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+/*-----------------
+   Hamburger Styles 
+   -----------------*/
+
+#hamburger-btn {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s;
+  position: relative;
+  outline: none;
+  border: none;
+  float: right;
+  transform: translateY(8px);
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #777;
+  padding: 1px;
+  transition: all 0.5s;
+
+
+}
+
+.hamburger-middle {
+
+  transform: translateY(7px);
+
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.close {
+  transform: rotate(70deg);
+  transform: translateY(0px);
+}
+
+.close .hamburger-middle {
+  display: none;
+}
+
+.close .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.close .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/*-----------------
+ Menu : Links Styles 
+ ------------------*/
+
+.mobile_menu {
+  background: rgba(255, 255, 255, 0.839);
+  width: 150px;
+  height: 240px;
+  border-radius: 10px;
+  position: absolute;
+  transform: translateY(84px);
+  right: 15px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  box-shadow: var(--sm-box-shadow);
+
+}
+
+.shop-cart {
+  width: 28px;
+  transform: translateY(5px) translateX(5px);
+}
+
+.mobile_menu a {
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+
+}
+
+.mobile_menu.hidden {
+  display: none;
+}
+
+.mobile_menu.flex {
+  display: flex;
+}
+
+.desktop_menu {
+  float: right;
+  transform: translateY(6px);
+}
+
+.desktop_menu a {
+  padding-right: 16px;
+}
+
+#cart_msg {
+  transform: translateY(100px);
+  float: right;
+  background-color: #fff;
+  width: 200px;
+  height: 60px;
+  padding: 20px;
+  box-shadow: var(--sm-box-shadow);
+  border-radius: 20px;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+#cart_msg.hide {
+  display: none;
+}
+
+#cart_msg::before {
+  content: '';
+  width: 30px;
+  transform: translateY(-30px) translateX(128px) rotate(45deg);
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  height: 30px;
+
+}
+
+/*--------------------------------
+ ------Home Section Styles -------
+ -------------------------------*/
+
+.home {
+  /* Background image made for both screen sizes*/
+  background-image: url('../images/home-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+}
+
+
+
+
+
+
+/*---------------------------------------------
+ ------Responsive Media Screen Settings ------
+ ------------------------------------------- */
+
+@media (max-width:618px) {
+  .desktop_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: flex;
+  }
+
+  #hamburger-btn {
+    display: block;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  /*--------------------------------
+ ------Shop Section Styles -------
+ -------------------------------*/
+
+  #shop .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  #shop .card {
+    width: 300px;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--md-box-shadow);
+    margin: 20px;
+  }
+
+  #shop .card img {
+    width: 200px;
+
+  }
+
+  #shop .card .overlay {
+    position: absolute;
+    transform: translateY(-60px);
+    background-color: #ffffffcd;
+    width: 293px;
+    height: 60px;
+    color: #555;
+    box-shadow: var(--md-box-shadow);
+    z-index: 10000;
+    padding-top: 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all.5s linear;
+    opacity: 0.7;
+  }
+
+
+
+  #shop .card:hover .overlay {
+    opacity: 9;
+  }
+
+  #shop .card .overlay img {
+    opacity: 0.6;
+    width: 30px;
+    margin-right: 10px;
+    height: auto;
+    float: right;
+    transform: translateY(-4px);
+    cursor: pointer;
+  }
+
+  #shop .card .overlay img:hover {
+    opacity: 0.8;
+  }
+
+  #shop .card .overlay span {
+    float: left;
+    margin-left: 20px;
+    cursor: default;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+  #shop .card .overlay span button#incr {
+    margin-left: 40px;
+  }
+
+  #shop .card .overlay span button {
+    border: 1px solid #777;
+    width: 30px;
+    height: 40px;
+  }
+
+  #shop .card .overlay span button.click {
+    background-color: #777;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  #shop .card .overlay span h5,
+  #shop .card .overlay span button {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    padding: 2px;
+    transform: translateY(-5px);
+  }
+
+}
+
+@media (min-width:618px) {
+  .desktop_menu {
+    display: block;
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+
+  #hamburger-btn {
+    display: none;
+  }
+
+  /*--------------------------------
+ ------Shop Section Styles -------
+ -------------------------------*/
+
+  #shop .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  #shop .card {
+    width: 300px;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--md-box-shadow);
+    margin: 20px;
+  }
+
+  #shop .card img {
+    width: 200px;
+
+  }
+
+  #shop .card .overlay {
+    position: absolute;
+    transform: translateY(-60px);
+    background-color: #ffffffcd;
+    width: 300px;
+    height: 60px;
+    color: #555;
+    box-shadow: var(--md-box-shadow);
+    z-index: 10000;
+    padding-top: 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all.5s linear;
+    opacity: 0.7;
+  }
+
+
+
+  #shop .card:hover .overlay {
+    opacity: 9;
+  }
+
+  #shop .card .overlay img {
+    opacity: 0.6;
+    width: 30px;
+    margin-right: 10px;
+    height: auto;
+    float: right;
+    transform: translateY(-4px);
+    cursor: pointer;
+  }
+
+  #shop .card .overlay img:hover {
+    opacity: 0.8;
+  }
+
+  #shop .card .overlay span {
+    float: left;
+    margin-left: 20px;
+    cursor: default;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+  #shop .card .overlay span button#incr {
+    margin-left: 40px;
+  }
+
+  #shop .card .overlay span button {
+    border: 1px solid #777;
+    width: 30px;
+    height: 40px;
+  }
+
+  #shop .card .overlay span button.click {
+    background-color: #777;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  #shop .card .overlay span h5,
+  #shop .card .overlay span button {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    padding: 2px;
+    transform: translateY(-5px);
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title></title>
+</head>
+
+<body>
+  <main>
+    <!-- ----------------------------Navigation Bar Started------------------------ -->
+    <nav>
+      <aside>
+        <img src="./images/logo.png" alt="Logo" class="logo">
+        <!-- Default Nav -->
+        <div class="desktop_menu">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Shop</a>
+          <a href="">Contact Us</a>
+          <a href=""><img class="shop-cart" src="./images/icons/shopping-cart-svgrepo-com.svg" alt="Cart"></a>
+        </div>
+        <!-- Hamburger Button -->
+        <button id="hamburger-btn" class="active">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </aside>
+      <!-- Mobile Nav -->
+
+      <div id="menu_mobile" class="mobile_menu hidden">
+        <a href=""><img class="shop-cart" src="./images/icons/shopping-cart-svgrepo-com.svg" alt="Cart"></a>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Shop</a>
+        <a href="">Contact Us</a>
+
+      </div>
+      <div id="cart_msg" class="hide">
+        Added To the Cart
+      </div>
+    </nav>
+    <!-- ----------------------------Navigation Bar Ended------------------------ -->
+
+    <!-- ----------------------------Home Section Started------------------------ -->
+
+    <section id="home" class="home">
+
+    </section>
+    <footer id="about"></footer>
+    <hr>
+    <section id="shop">
+      <h1 style="text-align: center;">Shop</h1>
+      <div class="wrapper">
+        <!--Item 1-->
+        <div class="card" id="card">
+          <img src="./images/img1.jpg" alt="Tomato">
+          <div class="overlay hide" id="overlay"><span>Tomato 200$ <button id="incr" class="incr" name="1">+</button>
+              <h5 id="res1">0</h5><button id="decr" class="decr" name="1">-</button>
+            </span><img src="./images/icons/shopping-cart-svgrepo-com.svg" alt="cart" id="1">
+          </div>
+        </div>
+        <!--Item 1-->
+        <div class="card" id="card">
+          <img src="./images/img2.jpg" alt="Banana">
+          <div class="overlay hide" id="overlay"><span>Banana 200$ <button id="incr" class="incr" name="2">+</button>
+              <h5 id="res2">0</h5><button id="decr" class="decr" name="2">-</button>
+            </span><img src="./images/icons/shopping-cart-svgrepo-com.svg" alt="cart" id="2">
+          </div>
+        </div>
+        <!--Item 1-->
+        <div class="card" id="card">
+          <img src="./images/img3.jpg" alt="Grapes">
+          <div class="overlay hide" id="overlay"><span>Grapes 200$ <button id="incr" class="incr" name="3">+</button>
+              <h5 id="res3">0</h5><button id="decr" class="decr" name="3">-</button>
+            </span><img src="./images/icons/shopping-cart-svgrepo-com.svg" alt="cart" id="3">
+          </div>
+        </div>
+        <!--Item 1-->
+        <div class="card" id="card">
+          <img src="./images/img4.jpg" alt="Orange">
+          <div class="overlay hide" id="overlay"><span>Orange 200$ <button id="incr" class="incr" name="4">+</button>
+              <h5 id="res4">0</h5><button id="decr" class="decr" name="4">-</button>
+            </span>
+            <img src="./images/icons/shopping-cart-svgrepo-com.svg" alt="cart" id="4">
+          </div>
+        </div>
+        <!--Item 1-->
+        <div class="card" id="card">
+          <img src="./images/img5.jpg" alt="">
+          <div class="overlay hide" id="overlay"><span>Tomato 200$ <button id="incr" class="incr" name="5">+</button>
+              <h5 id="res5">0</h5><button id="decr" class="decr" name="5">-</button>
+            </span><img src="./images/icons/shopping-cart-svgrepo-com.svg" alt="cart" id="5">
+          </div>
+        </div>
+        <!--Item 1-->
+        <div class="card" id="card">
+          <img src="./images/img6.jpg" alt="Potato">
+          <div class="overlay hide" id="overlay"><span>Potato 200$ <button id="incr" class="incr" name="6">+</button>
+              <h5 id="res6">0</h5><button id="decr" class="decr" name="6">-</button>
+            </span><img src="./images/icons/shopping-cart-svgrepo-com.svg" alt="cart" id="6">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------Home Section Ended------------------------ -->
+
+    <!-- ----------------------------Feature Section Started------------------------ -->
+  </main>
+  <!-----------------Scripts---------------- -->
+  <script src="./js/navbar.js"></script>
+  <script src="./js/quantity.js"></script>
+</body>
+
+</html>
