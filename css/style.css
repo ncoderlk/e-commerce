@@ -253,6 +253,10 @@ aside {
     display: none;
   }
 
+  #footer {
+    text-align: center;
+  }
+
   .mobile_menu {
     display: flex;
   }
@@ -754,6 +758,22 @@ aside {
     padding: 2px;
     transform: translateY(-5px);
   }
+
+  #footer #copyright {
+    text-align: center;
+    transform: translateY(150px);
+  }
+
+  .card {
+    background-color: #fff;
+  }
+
+  #footer h3 {
+    transform: translateY(100px);
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
 }
 
 #contact {
@@ -807,20 +827,6 @@ body {
   margin-bottom: 50px;
 }
 
-#footer #copyright {
-  text-align: center;
-  transform: translateY(150px);
-}
-
-.card {
-  background-color: #fff;
-}
-
-#footer h3 {
-  transform: translateY(100px);
-  margin-left: 50px;
-  cursor: pointer;
-}
 
 h1 button {
 
