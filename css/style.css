@@ -1106,8 +1106,9 @@ width:max-content;
  padding:12px;
 }
 #footer{
-width:max-content;
+width:100px;
 height:max-content;
+ min-height:70vh;
  padding:5px;
  
 }
