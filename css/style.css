@@ -259,18 +259,19 @@ aside {
     text-align: center;
     border: 2px solid #000;
   }
-*/
-  ul,
+  */
+
+  ol,
   li {
     text-align: center;
   }
 
-  ul {
+  ol {
     width: 100px;
     display: inline;
     margin: 50px;
 
-  } 
+  }
 
   .desktop_menu {
     display: none;
@@ -542,10 +543,6 @@ aside {
 }
 
 @media (min-width:618px) {
- ul {
-  text-align:center;
-  margin: auto;
-}
   #rate-mark hr {
     width: 25px;
     margin: auto;
@@ -697,7 +694,7 @@ aside {
   /*--------------------------------
  ------Shop Section Styles -------
  -------------------------------*/
-  /* ul,
+  /* ol,
   .fet {
     margin: auto;
     text-align: center;
@@ -1049,12 +1046,12 @@ td {
   text-align: center;
 }
 
-ul,
+ol,
 li {
   text-align: center;
 }
 
-ul {
+ol {
   width: 100px;
   display: inline;
   margin: 50px;
