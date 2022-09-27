@@ -251,7 +251,7 @@ aside {
 
 @media (max-width:618px) {
 
-  table,
+  /* table,
   th,
   td {
     padding: 4px;
@@ -270,7 +270,7 @@ aside {
     display: inline;
     margin: 50px;
 
-  }
+  } */
 
   .desktop_menu {
     display: none;
@@ -693,19 +693,19 @@ aside {
   /*--------------------------------
  ------Shop Section Styles -------
  -------------------------------*/
-  ul,
+  /* ul,
   .fet {
     margin: auto;
     text-align: center;
     transform: translateX(-500px) translateY(100px);
-  }
+  } */
 
-  table {
+  /* table {
     margin: auto;
     text-align: center;
     transform: translateX(-200px) translateY(70px);
     border: 2px solid #000;
-  }
+  } */
 
 
   #about p {
@@ -715,11 +715,12 @@ aside {
     margin-top: 100px;
   }
 
+  /* 
   td,
   th {
     border: 2px solid #000;
     padding: 5px;
-  }
+  } */
 
   #shop .wrapper {
     display: flex;
@@ -875,6 +876,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   transition: all.3s ease;
+  /* background-color: #011131; */
+  /* background-blend-mode: overlay; */
 }
 
 
@@ -1019,4 +1022,60 @@ nav a:hover {
 
 nav a {
   transition: all.3s ease;
+}
+
+table,
+th,
+td {
+
+  margin: auto;
+  text-align: center;
+}
+
+ul,
+li {
+  text-align: center;
+}
+
+ul {
+  width: 100px;
+  display: inline;
+  margin: 50px;
+
+}
+
+td,
+th {
+  padding: 5px;
+  color: #000;
+}
+
+th {
+  border: 3px solid #00000085;
+  background-color: rgb(162, 232, 21);
+}
+
+/* th:first-child {
+  border-right: none;
+  padding-right: 0;
+  margin-right: 0;
+} */
+
+th:last-child {
+  padding-left: 0;
+  margin-left: 0;
+  border-left: none;
+}
+
+td {
+  border: 3px solid #00000085;
+  border-top: none;
+  border-left: none;
+  background-color: rgba(187, 205, 50, 0.256);
+}
+
+td:first-child {
+  border-left: 3px solid #00000085;
+  padding-left: 0;
+  margin-left: 0;
 }
