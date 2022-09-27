@@ -779,10 +779,6 @@ aside {
     transform: translateY(-4px);
     cursor: pointer;
   }
- ol{
- background:#fff;
- border-radius:20px;
- }
 
 
 
@@ -1098,16 +1094,8 @@ td:first-child {
   margin-left: 0;
 }
 .ol{
-background-color:#fff;
-border-radius:20px;
-width:max-content;
- margin: auto;
- text-align:center;
- padding:12px;
-}
-/* #footer{
-width:100%;
- min-height:70vh;
- padding:5px;
-}
- */
+background:#fff;
+padding:12px;
+text-align:center;
+margin:auto;
+border-radius:20px;}
