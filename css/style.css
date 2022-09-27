@@ -1097,3 +1097,6 @@ td:first-child {
   padding-left: 0;
   margin-left: 0;
 }
+ol{
+background-color:#fff;
+border-radius:20px;}
