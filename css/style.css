@@ -779,6 +779,10 @@ aside {
     transform: translateY(-4px);
     cursor: pointer;
   }
+ ol{
+ background:#fff;
+ border-radius:20px;
+ }
 
 
 
