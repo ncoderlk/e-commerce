@@ -785,7 +785,8 @@ aside {
     float: right;
     font-size: 20px;
     text-align: center;
-    color: #777;
+    /* color: #777; */
+    color: #000;
     transform: translateX(-100px);
   }
 
@@ -863,7 +864,7 @@ aside {
   /* background-image: url('../images/footer-bg.jpg'); */
   /* background-color: #fff; */
   background-size: cover;
-  color: #777;
+  /* color: #777; */
 }
 
 .ratebox {
@@ -885,11 +886,16 @@ body {
   background-image: linear-gradient(yellowgreen, green);
   -webkit-backface-visibility: visible;
   -webkit-background-clip: text;
-  color: transparent;
+  /* color: transparent; */
   text-align: center;
   font-size: 35px;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+
+#footer {
+  background-color: #00000085;
+  color: #000;
 }
 
 .social {
@@ -999,12 +1005,19 @@ nav button:hover {
 
 #shop h1,
 #about h1,
-h1 {
+h1,
+.connect-social h2 {
   font-size: 35px;
   background-image: linear-gradient(yellowgreen, green);
   color: transparent;
   -webkit-background-clip: text;
   -webkit-backface-visibility: visible;
+}
+
+
+
+#footer a {
+  color: #000;
 }
 
 #about p {
