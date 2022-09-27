@@ -542,6 +542,9 @@ aside {
 }
 
 @media (min-width:618px) {
+ ul {
+  margin-right: 50px;
+}
   #rate-mark hr {
     width: 25px;
     margin: auto;
