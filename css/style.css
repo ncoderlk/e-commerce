@@ -1097,6 +1097,10 @@ td:first-child {
   padding-left: 0;
   margin-left: 0;
 }
-ol{
+.ol{
 background-color:#fff;
-border-radius:20px;}
+border-radius:20px;
+width:max-content;
+ margin: auto;
+ text-align:center;
+}
